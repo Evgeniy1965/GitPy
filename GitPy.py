@@ -30,7 +30,7 @@ class GitDo:
 		if self.wnd:
 			self.wnd.logEdit.setText(s)
 		else:
-			print s
+			print(s)
 	def create_git(self):
 		self.doGitCommand('git init')		
 	
