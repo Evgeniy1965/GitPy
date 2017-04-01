@@ -23,7 +23,7 @@ class GitDo:
 	def doGitCommand(self,source):
 		print "%s" % source
 		PIPE = subprocess.PIPE
-		p = subprocess.Popen("%s" % source,shell = True,stdin=PIPE,
+		p = subprocess.Popen(str(source),shell = True,stdin=PIPE,
 						stdout = PIPE,
 						stderr =  subprocess.STDOUT,close_fds = True)
 		s = p.stdout.read()
