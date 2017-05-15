@@ -5,3 +5,6 @@ GUI для взаимодействия с Git.
 
 Запуск под linux:
 
+$ chmod a+x start.sh
+
+$./start.sh
